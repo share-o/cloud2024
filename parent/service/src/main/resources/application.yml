@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-nacos
+server:
+  port: 8090
+  servlet:
+    context-path: /service
