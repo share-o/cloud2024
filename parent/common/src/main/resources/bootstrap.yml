@@ -1,0 +1,14 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: common
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 43.136.31.89:8848
+        group: nacos-group
+      config:
+        server-addr: 43.136.31.89:8848
+        file-extension: yml
