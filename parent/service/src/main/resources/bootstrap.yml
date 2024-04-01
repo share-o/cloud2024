@@ -5,10 +5,10 @@ spring:
       discovery:
         server-addr: 43.136.31.89:8848
         namespace: 78fe26de-0604-49f5-9a54-4b381d6797a9
-        service: common
+        service: service
       config:
         group: nacos-group
         server-addr: 43.136.31.89:8848
         namespace: 78fe26de-0604-49f5-9a54-4b381d6797a9
         file-extension: yml
-        name: common-dev.yml
+        name: service-dev.yml
