@@ -13,12 +13,25 @@ import org.springframework.context.annotation.Bean;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@MapperScan(basePackages ="org.example.mapper")
+@MapperScan(basePackages = "org.example.mapper")
 public class ServiceApplication {
+    /**
+     * 启动入口
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-        SpringApplication.run(ServiceApplication.class,args);
+        try {
+            SpringApplication.run(ServiceApplication.class, args);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
+    /**
+     * 分页拦截器
+     * @return
+     */
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor mybatisPlusInterceptor = new MybatisPlusInterceptor();
